@@ -1,5 +1,11 @@
+:root {
+    --font-color: rgb(212, 67, 212);
+    --bg-color: #323135;
+    --bor-rad: 8px;
+}
+
 body {
-    background: #333;
+    background: var(--bg-color);
     font-size: 16pt;
     color: #fff
 }
@@ -8,19 +14,20 @@ header,
 footer {
     text-align: center;
     padding: 50px;
-
 }
 
 h1 {
     font-size: 2.5rem;
     margin: 25px 0;
 }
+
 h2{
     font-size: 1.5rem;
     margin: 20px 0;
 }
+
 h1, h2 {
-    color: fuchsia;
+    color: var(--font-color);
 }
 
 .row {
@@ -29,11 +36,51 @@ h1, h2 {
     padding: 0 15px;
 }
 
-.column-card{
+.column-card {
     flex: 1 0 100%;
-    border: 1px solid #fff;
+    border: 1px dashed #fff;
+    border-radius: var(--bor-rad);
+    margin: 10px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    padding: 5px;
+}
+
+.column-card .card-header {
+    border-radius: var(--bor-rad);
+    transition: all 0.5s ease-in-out;
+}
+
+.column-card:hover,
+.column-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--font-color);
+    padding: 0 0 10px 0;
+}
+
+.code-box {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    border-radius: 10px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 768px){
