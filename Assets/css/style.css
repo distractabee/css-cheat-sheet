@@ -30,6 +30,10 @@ h1, h2 {
     color: var(--font-color);
 }
 
+.stand-out {
+    color: #fff;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -37,20 +41,26 @@ h1, h2 {
 }
 
 .column-card {
+    display: flex;
+    flex-direction: column;
     flex: 1 0 100%;
     border: 1px dashed #fff;
     border-radius: var(--bor-rad);
     margin: 10px;
     padding: 10px;
     text-align: left;
-    max-width: 350px;
+    justify-content: space-between;
+}
+
+.card-top-wrap {
+
 }
 
 .card-header {
     position: relative;
     margin-top: -20px;
     border: 1px solid #fff;
-    border-radius: 8px;
+    border-radius: var(--bor-rad);
     background-color: var(--bg-color);
     padding: 5px;
 }
@@ -73,10 +83,18 @@ p {
     padding: 0 0 10px 0;
 }
 
+h1::selection,
+h2::selection,
+p::selection {
+    color: #fff;
+    background-color: var(--font-color);
+}
+
 pre::selection {
     color: #323135;
     background-color: aqua;
 }
+
 .code-box {
     background-image: linear-gradient(
         rgba(232, 102, 236, 0.3) 0%,
@@ -86,6 +104,7 @@ pre::selection {
     text-align: left;
     font-family: monospace;
     font-size: 1rem;
+    user-select: all;
 }
 
 @media screen and (min-width: 768px) {

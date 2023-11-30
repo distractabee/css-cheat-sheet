@@ -18,7 +18,11 @@ It is also designed to be responsive to tablet and phone screen widths.
 
 ## Credits
 
-This project was completed using some code that was started by my instructor John Lynch in my programming bootcamp seminar. It also includes some code that was created by the bootcamp (specifically the glow on hover code and the linear gradient background).
+This project was completed using some code that was started by my instructor John Lynch in my programming bootcamp seminar. 
+
+It also includes some code that was created by the bootcamp (specifically the glow on hover code and the linear gradient background).
+
+Troubleshooting by rocketpilot.
 
 ## License
 
