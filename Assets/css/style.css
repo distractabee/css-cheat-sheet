@@ -43,6 +43,7 @@ h1, h2 {
     margin: 10px;
     padding: 10px;
     text-align: left;
+    max-width: 350px;
 }
 
 .card-header {
