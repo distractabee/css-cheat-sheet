@@ -13,7 +13,7 @@ Using the website is very striaghtforward but it does have some fun features. Se
 
 It is also designed to be responsive to tablet and phone screen widths. 
 
-    ![This screenshot demonstrates both the selection highlight and the glow on hover features of the site](assets/images/screenshot1.png)
+    ![This screenshot demonstrates both the selection highlight and the glow on hover features of the site](./assets/images/screenshot1.png)
 
 
 ## Credits
