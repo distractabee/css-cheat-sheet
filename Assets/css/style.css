@@ -52,6 +52,11 @@ h1, h2 {
     justify-content: space-between;
 }
 
+/*
+This empty div container between the card-header element and the code-box element
+allows the justify-content modifier to push the code-box element against the bottom
+border of the column-card element 
+*/
 .card-top-wrap {
 
 }
@@ -106,6 +111,11 @@ pre::selection {
     font-size: 1rem;
     user-select: all;
 }
+
+/*
+These media queries allow a responsive design for the web application to display neatly
+on phone and tablet screens
+*/
 
 @media screen and (min-width: 768px) {
     .column-card {
